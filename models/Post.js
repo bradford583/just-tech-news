@@ -1,5 +1,4 @@
-const { Model, Datatypes } = require('sequelize');
-const { all } = require('sequelize/types/lib/operators');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 //create Post model
@@ -40,3 +39,5 @@ Post.init(
         modelName: 'post'
     }
 );
+
+module.exports = Post;
